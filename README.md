@@ -30,17 +30,17 @@ then to show our original and gray scale image :</br>
 Now, as our camera is okay so we are ready for face detetction. Here we have used building cascade classifier form OpenCv. </br>
 -face_c = cv2.CascadeClassifier('Cascades/haarcascade_frontalface_default.xml')#we may create our own classifier but here I have used trained classifier from OpenCv </br>
 Then We have to call our classifier function, passing to some very important parameters like scale factor, number of neighbours and minimum size of the detected face. </br>
--faces = face_c.detectMultiScale(
-        gray,     
-        scaleFactor=1.2,
-        minNeighbors=5,     
-        minSize=(20, 20)
-    )
-Whenever, a face is detected a rectecngular box indicates the face region. 
--for (x,y,w,h) in faces:     # (x,y) coordinate of the left upper position to draw the rectangle 
-        cv2.rectangle(img_flim,(x,y),(x+w,y+h),(255,0,0),2) # draw a rectangle indicating face
-        roi_gray = gray[y:y+h, x:x+w]
-        roi_color = img_flim[y:y+h, x:x+w] 
+-faces = face_c.detectMultiScale(</br>
+        gray,     </br>
+        scaleFactor=1.2,</br>
+        minNeighbors=5,     </br>
+        minSize=(20, 20)</br>
+    )</br>
+Whenever, a face is detected a rectecngular box indicates the face region.</br> 
+-for (x,y,w,h) in faces:     # (x,y) coordinate of the left upper position to draw the rectangle</br> 
+        cv2.rectangle(img_flim,(x,y),(x+w,y+h),(255,0,0),2) # draw a rectangle indicating face</br>
+        roi_gray = gray[y:y+h, x:x+w]</br>
+        roi_color = img_flim[y:y+h, x:x+w]</br> 
 
 
 
