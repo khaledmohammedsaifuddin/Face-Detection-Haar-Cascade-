@@ -16,5 +16,15 @@ As, we know Opencv can be used as a trainer as well as a detector. So, we can tr
 By following these steps from here: [Creating a Cascade of Haar-Like Classifier: Step by Step](https://www.cs.auckland.ac.nz/~m.rezaei/Tutorials/Creating_a_Cascade_of_Haar-Like_Classifiers_Step_by_Step.pdf)
 
 But as OpenCv conatains many pre-trained classifier, I have used form those pre-trained. 
+# Procedures
+## Camera Test
+At first we have to test is our ready to perform. I imported OpenCv in python. Then capture video by using this command: 
+-vdo = cv2.VideoCapture(0) #here indexing 0 indicates my first camera
+-retu, img_frame = vdo.read()#it's return boolean true and false
+We can convert our real image into gray scale by using this command: 
+-gray = cv2.cvtColor(img_frame, cv2.COLOR_BGR2GRAY)
+then to show our original and gray scale image :
+-cv2.imshow('img_frame', img_frame) #original image 
+-cv2.imshow('gray', gray)# gray image
 
 
