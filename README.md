@@ -1,9 +1,9 @@
 # Face-Detection-Haar-Cascade
 Face Detection Technique using Raspberry Pi with Pi camera. 
 # Goals
--To introduce with OpenCV </br>
--Interface Pi camera with Raspberry Pi and test the camera</br>
--Detect human face using Haar Cascade classifier
+- To introduce with OpenCV </br>
+- Interface Pi camera with Raspberry Pi and test the camera</br>
+- Detect human face using Haar Cascade classifier
 # Description 
 Here, this project is done using OpenCV with python, Raspberry Pi and Pi camera. I used Haar features based cascade classifier where a cascade function is trained from a lot of positive and negative images. 
 ### Negative Images: 
