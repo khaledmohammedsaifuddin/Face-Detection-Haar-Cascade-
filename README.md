@@ -38,6 +38,6 @@ Then We have to call our classifier function, passing to some very important par
     )</br>
 Whenever, a face is detected a rectecngular box indicates the face region.</br> 
 -for (x,y,w,h) in faces:     # (x,y) coordinate of the left upper position to draw the rectangle</br> 
-        cv2.rectangle(img_flim,(x,y),(x+w,y+h),(255,0,0),2) # draw a rectangle indicating face</br>
-        roi_gray = gray[y:y+h, x:x+w]</br>
-        roi_color = img_flim[y:y+h, x:x+w]</br> 
+        -cv2.rectangle(img_flim,(x,y),(x+w,y+h),(255,0,0),2) # draw a rectangle indicating face</br>
+        -roi_gray = gray[y:y+h, x:x+w]</br>
+        -roi_color = img_flim[y:y+h, x:x+w]</br> 
